@@ -1,43 +1,52 @@
 #labelHeader {
     font-family: 'Times New Roman', Times, serif;
-    font-size:large;
+    font-size: large;
 }
+
 #title {
     margin-top: 1%;
     margin-left: 8vh;
+    font-size: clamp(1.5rem, 2vw, 2.3rem);
+    line-height: 1.2;
 }
 
 #pages {
     margin-left: 3%;
 }
-#header{
+
+#header {
     background-color: white;
     width: 100%;
-    position: sticky; 
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
+
 #Link:hover {
     color: #b5651d;
 }
-
-
 
 @media (max-width:700px) {
     #header {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        padding: 0.5rem 0.75rem;
     }
+
     #Link {
         flex-basis: 100%;
+        width: 100%;
     }
+
     #title {
-        margin-left: 1vh;
+        margin-left: 0;
+        font-size: clamp(1.2rem, 5vw, 2rem);
     }
 
     #menu-icon {
-       margin-left: 5vh;
-       margin-bottom: 3vh;
+        margin-left: 0.5rem;
+        margin-bottom: 0;
     }
-   
 }
 
-   

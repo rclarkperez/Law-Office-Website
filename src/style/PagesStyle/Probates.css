@@ -1,28 +1,30 @@
 #probates {
     background-image: url('https://images.unsplash.com/photo-1528752477378-485b46bedcde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80');
-    height: 75vh;
+    min-height: 75vh;
+    height: auto;
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
 }
+
 #probabates-banner {
     margin-top: 5vh;
     padding-bottom: 3vh;
 }
+
 #probates-text-content {
     margin-left: 10vh;
     margin-right: 18vh;
     margin-bottom: 10vh;
-
 }
 
 @media (max-width:700px) {
     #probates {
-        height: 60vh;
+        min-height: 60vh;
+        height: auto;
     }
 
     #probates-text-content {
-        margin-left: 10vh;
-        margin-right: 10vh;
+        margin: 0;
+        padding: 0 1rem 2rem;
     }
-
 }

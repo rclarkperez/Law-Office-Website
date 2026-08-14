@@ -1,10 +1,13 @@
 #input-form {
     margin-left: 11vh;
     margin-right: 15vh;
+    max-width: 100%;
 }
 
 @media (max-width:700px) {
     #input-form {
-        margin-left: 4vh;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 1rem;
     }
 }

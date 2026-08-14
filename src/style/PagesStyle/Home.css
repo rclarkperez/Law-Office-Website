@@ -1,6 +1,7 @@
 #home {
     background-image: url("https://images.unsplash.com/photo-1619982842225-871a5d15e73a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
-    height: 80vh;
+    min-height: 80vh;
+    height: auto;
     background-position: center;
     background-size: cover;
     margin-bottom: -3vh;
@@ -8,11 +9,20 @@
 
 #text {
     color: white;
-    padding-top: 5vh;
+    padding: 5vh 1rem 0;
 }
 
 @media (max-width:700px) {
     #home {
-        height: 60vh;
+        min-height: 60vh;
+        height: auto;
+    }
+
+    #text h1 {
+        font-size: 2rem;
+    }
+
+    #text h3 {
+        font-size: 1.2rem;
     }
 }
